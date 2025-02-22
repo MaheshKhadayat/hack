@@ -1,54 +1,52 @@
 {
-    "routes": [
-      {
-        "src": "/",
-        "dest": "/"
-      },
-      {
-        "src": "/login",
-        "dest": "/"
-      },
-      {
-        "src": "/register",
-        "dest": "/"
-      },
-      {
-        "src": "/verify/:token",
-        "dest": "/"
-      },
-      {
-        "src": "/forgot-password",
-        "dest": "/"
-      },
-      {
-        "src": "/reset-password/:token",
-        "dest": "/"
-      },
-      {
-        "src": "/add-companies",
-        "dest": "/"
-      },
-      {
-        "src": "/investments",
-        "dest": "/"
-      },
-      {
-        "src": "/explore",
-        "dest": "/"
-      },
-      {
-        "src": "/company/:companyName",
-        "dest": "/"
-      },
-      {
-        "src": "/alert-breadCrumb",
-        "dest": "/"
-      },
-      {
-        "src": "/portfolio",
-        "dest": "/"
-      }
-    ]
-  }
-
- 
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/login",
+      "dest": "/login.html"
+    },
+    {
+      "src": "/register",
+      "dest": "/register.html"
+    },
+    {
+      "src": "/verify/(?<token>[^/]+)",
+      "dest": "/verify.html?token=$token"
+    },
+    {
+      "src": "/forgot-password",
+      "dest": "/forgot-password.html"
+    },
+    {
+      "src": "/reset-password/(?<token>[^/]+)",
+      "dest": "/reset-password.html?token=$token"
+    },
+    {
+      "src": "/add-companies",
+      "dest": "/add-companies.html"
+    },
+    {
+      "src": "/investments",
+      "dest": "/investments.html"
+    },
+    {
+      "src": "/explore",
+      "dest": "/explore.html"
+    },
+    {
+      "src": "/company/(?<companyName>[^/]+)",
+      "dest": "/company.html?companyName=$companyName"
+    },
+    {
+      "src": "/alert-breadCrumb",
+      "dest": "/alert-breadCrumb.html"
+    },
+    {
+      "src": "/portfolio",
+      "dest": "/portfolio.html"
+    }
+  ]
+}
